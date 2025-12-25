@@ -45,8 +45,10 @@ const Header = () => {
                 behavior: 'smooth',
                 block: 'start'
             });
+            setIsMenuOpen(false);
+        } else {
+            window.location.href = `/#${sectionId}`;
         }
-        setIsMenuOpen(false);
     };
 
     return (
