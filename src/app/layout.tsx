@@ -233,7 +233,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     <html lang={lng} className="dark">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="https://flowstack/favicon.ico" type="image/x-icon"></link>
         <link rel="icon" type="image/png" href="/favicon.png" sizes="192x192" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <script
