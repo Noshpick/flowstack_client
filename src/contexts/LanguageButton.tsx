@@ -25,9 +25,11 @@ export default function LanguageButton() {
 
   const toggleLanguage = async () => {
     const next = language === 'en' ? 'ru' : 'en'
+    console.log('[LanguageButton] Toggling to:', next)
     setLanguage(next)
     await i18n.changeLanguage(next)
     Cookies.set('i18next', next, { path: '/', expires: 365 })
+    console.log('[LanguageButton] Cookie set, all cookies:', document.cookie)
     router.refresh()
   }
 
