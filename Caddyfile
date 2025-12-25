@@ -1,0 +1,9 @@
+# Caddy сам получит/продлит сертификаты от Let's Encrypt
+flowstack.ru, www.flowstack.ru {
+    encode zstd gzip
+    @static path /_next/static/* /favicon.ico /robots.txt /sitemap.xml
+    handle @static {
+        reverse_proxy app:3000
+    }
+    reverse_proxy app:3000
+}

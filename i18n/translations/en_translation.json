@@ -1,0 +1,470 @@
+{
+  "LINKS": {
+    "support": "https://t.me/flowstack_support"
+  },
+  "HEADER": {
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contacts": "Contacts",
+    "contactUs": "Discuss Project"
+  },
+  "HERO": {
+    "title_1": "Your",
+    "title_2": "digital product",
+    "title_3": "starts here.",
+    "description": "The Flowstack team creates modern web applications and services with a clear focus on results.",
+    "card": {
+      "title_1": "Explore our work or",
+      "title_2": "discuss your task:",
+      "button": {
+        "ourCases": "Our Cases",
+        "contactUs": "Discuss Project"
+      }
+    }
+  },
+  "SERVICES": {
+    "title": "Our Expertise",
+    "cards": {
+      "card_1": {
+        "title": "Custom web application development turnkey",
+        "button": "Create Project",
+        "href": "/"
+      },
+      "card_2": {
+        "title": "Telegram bot development for small and large businesses",
+        "button": "Create Project",
+        "href": "/"
+      },
+      "card_3": {
+        "title": "We offer and create business strategies",
+        "button": "Create Project",
+        "href": "/"
+      },
+      "card_4": {
+        "title": "MVP design and development on order",
+        "button": "Create Project",
+        "href": "/"
+      },
+      "card_5": {
+        "title": "AI solutions",
+        "button": "Create Project",
+        "href": "/"
+      },
+      "card_6": {
+        "title": "Custom web application development turnkey",
+        "button": "Discuss Project",
+        "href": "/"
+      }
+    }
+  },
+  "PORTFOLIO": {
+    "title": "Completed projects from our development team",
+    "subtitle": "Portfolio",
+    "block_titles": {
+      "technologies": "Stack",
+      "result": "Result",
+      "deadlines": "Deadlines",
+      "team": "Team",
+      "client": "Client",
+      "problems": "Problems",
+      "solutions": "Solutions",
+      "results": "Results",
+      "screenshots": "Project Screenshots"
+    },
+    "buttons": {
+      "go_to_website": "Go to website",
+      "view_case": "View case"
+    },
+    "cases": [
+      {
+        "id": 1,
+        "title": "Online Store for Esoteric Goods",
+        "description": "Development of a modern e-commerce store for selling esoteric goods with process automation",
+        "image": "/images/cases/ecolavka.shop/main.png",
+        "result": "Sales: +25%",
+        "technologies": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "PostgreSQL"
+        ],
+        "siteUrl": "https://ecolavka.shop",
+        "caseUrl": "/images/cases/ecolavka.shop/main.png",
+        "fullDescription": "Created a full-featured e-commerce store for selling esoteric goods with order management, inventory, and customer database systems.",
+        "challenges": "Need to create an intuitive interface for complex product categorization (crystals, tarot cards, candles, etc.)",
+        "solutions": [
+          "Development of a smart filtering system based on product properties",
+          "Mobile adaptation considering category specifics"
+        ],
+        "metrics": [
+          "Optimization: 40%",
+          "Cost reduction: 20%",
+          "Request processing: 15%"
+        ],
+        "duration": "5 weeks",
+        "teamSize": "3 people",
+        "client": "Esoteric Goods Store",
+        "gallery": [
+          "/images/cases/ecolavka.shop/screen_1.png",
+          "/images/cases/ecolavka.shop/screen_2.png",
+          "/images/cases/ecolavka.shop/screen_3.png"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "AI Assistant for 'Fire Phoenix' School",
+        "description": "Developed an intelligent Telegram bot for the 'Fire Phoenix' Chinese language school",
+        "image": "/images/cases/firephoenix.bot/main.png",
+        "result": "Optimization: +40%",
+        "technologies": [
+          "Python",
+          "Aiogram",
+          "Pytest"
+        ],
+        "siteUrl": "https://t.me/firephoenixassistant_bot",
+        "caseUrl": "/images/cases/case_1.png",
+        "fullDescription": "Developed an intelligent Telegram bot for the 'Fire Phoenix' Chinese language school.",
+        "challenges": "",
+        "solutions": [
+          "Business process optimization",
+          "AI solutions",
+          "Customer support",
+          "Mobile adaptation"
+        ],
+        "metrics": [
+          "Optimization: 40%",
+          "Cost reduction: 20%",
+          "Application processing: 15%"
+        ],
+        "duration": "1 week",
+        "teamSize": "2 people",
+        "client": "Online Education (Fire Phoenix)",
+        "gallery": []
+      },
+      {
+        "id": 3,
+        "title": "Landing Page for 'Fire Phoenix' Chinese Online School",
+        "description": "Development of a sales landing page for a Chinese language school with a booking system and client acquisition",
+        "image": "/images/cases/firephoenix.school/main.png",
+        "result": "Conversion increase: +35%",
+        "technologies": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS"
+        ],
+        "siteUrl": "https://firephoenix.school/",
+        "caseUrl": "/cases/firephoenix",
+        "fullDescription": "Created a modern sales landing page for the 'Fire Phoenix' Chinese language online school. The website includes an online course booking system, information about teachers, educational programs, and student reviews.",
+        "challenges": "Need to stand out in the competitive online education market and build trust with potential students",
+        "solutions": [
+          "Development of bright, memorable design with elements of Chinese culture",
+          "Implementation of an online booking and feedback system",
+          "Responsive design for all devices"
+        ],
+        "metrics": [],
+        "duration": "3 weeks",
+        "teamSize": "3 people",
+        "client": "'Fire Phoenix' Chinese Language Online School",
+        "gallery": []
+      }
+    ]
+  },
+  "TEAM": {
+    "title": "Our team of professionals",
+    "subtitle": "Team",
+    "block_titles": {
+      "technologies": "Stack",
+      "experience": "Experience",
+      "projects": "Projects",
+      "bio": "About",
+      "creates": "Creates",
+      "skills": "Skills"
+    },
+    "members": [
+      {
+        "id": 1,
+        "imageUrl": "/images/team/danya.webp",
+        "name": "Danil Khudoy",
+        "emoji": "🔐",
+        "specialty": "CEO & Head of Technology",
+        "description": "Chief Executive Officer and Head of Development with over 6 years of experience in fullstack development and digital project management. Has worked in major digital and big tech companies, as well as developed his own projects. Specializes in strategic management, building product teams, and launching high-load services.",
+        "technologies": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Node.js",
+          "Python",
+          "Django",
+          "PostgreSQL",
+          "Prisma",
+          "GraphQL",
+          "Docker",
+          "Kubernetes",
+          "CI/CD",
+          "Cloud (AWS, Yandex Cloud)"
+        ],
+        "buttonText": "About Me",
+        "bio": "Started his career in 2019 as a developer, quickly grew to team lead and later to CEO of his own studio. Experience includes developing and launching e-commerce stores, fintech solutions, educational platforms, and corporate services. As CEO, was responsible for strategy, financial planning, investor relations, as well as establishing development processes and team management.",
+        "experience": "6 years",
+        "projects": "30+ projects",
+        "creates": "IT products for business, SaaS platforms, mobile applications, Telegram bots, corporate systems",
+        "skills": [
+          "Business and IT direction management",
+          "Team formation and development",
+          "Strategic planning",
+          "Product management and market entry",
+          "Fundraising and investor relations",
+          "Service architecture and scaling",
+          "Integration of AI solutions into products",
+          "Building development and DevOps processes"
+        ]
+      },
+      {
+        "id": 2,
+        "imageUrl": "/images/team/andrey.webp",
+        "name": "Andrey Kuligin",
+        "emoji": "💡",
+        "specialty": "Head of Backend",
+        "description": "Head of Backend with experience in architecture design, developing scalable services, and automating business processes.",
+        "technologies": [
+          "Go",
+          "Node.js",
+          "TypeScript",
+          "Python",
+          "PostgreSQL",
+          "Prisma",
+          "GraphQL",
+          "Redis",
+          "Docker",
+          "Kubernetes",
+          "CI/CD",
+          "gRPC"
+        ],
+        "buttonText": "More Details",
+        "bio": "Since 2020, has been engaged in development and design of server systems. Experience covers creating web applications, Telegram bots and mini apps, as well as implementing complex business solutions. Responsible for service scalability and reliability, API design, and integration of modern technologies. Manages a team of backend developers, establishes development processes, and ensures high code quality.",
+        "experience": "5 years",
+        "projects": "25+ successful projects",
+        "creates": "High-load web services, APIs, microservices, corporate solutions, Telegram bots and Mini Apps",
+        "skills": [
+          "Backend system architecture and design",
+          "Developer team management",
+          "Creating microservices and REST/GraphQL APIs",
+          "Performance and security optimization",
+          "Business logic integration and process automation",
+          "Development and scaling of Telegram Mini Apps"
+        ]
+      },
+      {
+        "id": 3,
+        "imageUrl": "/images/team/katya.webp",
+        "name": "Ekaterina Smirnova",
+        "emoji": "🎨",
+        "specialty": "Head of Design",
+        "description": "Head of Design with experience in creating digital products, brand identity, and user interfaces. Responsible for visual strategy and user experience quality.",
+        "technologies": [
+          "Figma",
+          "Adobe Photoshop",
+          "Adobe Illustrator",
+          "HTML/CSS"
+        ],
+        "buttonText": "More Details",
+        "bio": "Creates unique and memorable digital products. From idea to implementation: website and application design that distinguishes the brand and engages the audience.",
+        "experience": "3+ years",
+        "projects": "20+ projects",
+        "creates": "UI/UX for web and mobile applications, design systems, animations and interactives",
+        "skills": [
+          "Design team management",
+          "UI/UX design and prototyping",
+          "Creating design systems and UI kits",
+          "Interface prototyping and animation",
+          "Adaptive and responsive design",
+          "Branding and visual communication",
+          "Working with component-based approach"
+        ]
+      },
+      {
+        "id": 4,
+        "imageUrl": "/images/team/denis.webp",
+        "name": "Denis Kotelnikov",
+        "emoji": "☄️",
+        "specialty": "Head of Frontend",
+        "description": "Head of Frontend with experience in development and team management. Responsible for client application architecture, implementation of modern technologies, and development of engineering culture.",
+        "technologies": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "JavaScript",
+          "GraphQL",
+          "Node.js",
+          "Docker"
+        ],
+        "buttonText": "More Details",
+        "bio": "Manages the frontend department, forms interface development strategy, and is responsible for user experience quality. Oversees architecture design, implementation of new tools, and team training. Work experience covers projects from startups to large enterprise, including high-load platforms and e-commerce solutions.",
+        "experience": "4+ years",
+        "projects": "20+ major projects",
+        "creates": "Modern web applications, PWAs, UI libraries, mobile interfaces",
+        "skills": [
+          "Team management and development",
+          "Frontend architecture design",
+          "Performance optimization",
+          "Development of design systems and UI kits",
+          "Quality assurance and code review"
+        ]
+      }
+    ]
+  },
+  "STAGES": {
+    "title": "Work Stages",
+    "cards": {
+      "card_1": {
+        "title": "Consultation",
+        "description": "You contact us, we conduct a free consultation and dive into your task."
+      },
+      "card_2": {
+        "title": "Planning",
+        "description": "Create a detailed project plan and define the scope of work."
+      },
+      "card_3": {
+        "title": "Development",
+        "description": "Our team implements the solution using modern technologies."
+      },
+      "card_4": {
+        "title": "Testing",
+        "description": "Thoroughly test the product to ensure quality and performance."
+      },
+      "card_5": {
+        "title": "Launch",
+        "description": "Deploy the solution and provide ongoing support."
+      }
+    }
+  },
+  "CONTACTS": {
+    "title": "Start your project today.",
+    "description": "Describe your task directly in the message. We will respond within an hour and prepare a preliminary estimate.",
+    "button": "Write to us on Telegram"
+  },
+  "VACANCY_MODAL": {
+    "name": "Name",
+    "last_name": "Last Name",
+    "Ivan": "Ivan",
+    "Ivanov": "Ivanov",
+    "format": "Format:",
+    "resume": "Resume",
+    "example": "Example:",
+    "phone": "Phone",
+    "file_size": "File size up to 10MB",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "loading": "Sending...",
+    "apply": "Apply",
+    "responsibilities": "Responsibilities",
+    "requirements": "Requirements",
+    "conditions": "Conditions",
+    "vacancies": "Vacancies",
+    "apply_success": "Application sent! We will contact you in Telegram.",
+    "more": "Learn more",
+    "feed": "Application for Vacancy"
+  },
+  "VACANCIES": {
+"frontend-dev": {
+  "title": "Frontend Developer (Next.js)",
+  "location": "Vladivostok / remote",
+  "short": "SSR, Tailwind, i18n",
+  "salary": "Project-based",
+  "responsibilities": [
+    "Develop pages in Next.js (App Router)",
+    "UI with Tailwind, i18n integration",
+    "Optimize Lighthouse and Web Vitals"
+  ],
+  "requirements": [
+    "TypeScript, React 18",
+    "Next 13/14+, SSR/ISR, routing",
+    "Git, code review, basic UX skills"
+  ],
+  "conditions": [
+    "Flexible schedule, remote",
+    "Market-level payment",
+    "Friendly team without micromanagement"
+  ]
+},
+"backend-dev": {
+  "title": "Backend Developer (NodeJS)",
+  "location": "Vladivostok / remote",
+  "short": "ElysiaJS, Prisma, PostgreSQL, TypeScript, Jest",
+  "salary": "Project-based",
+  "responsibilities": [
+    "Develop APIs using ElysiaJS",
+    "Integrate with PostgreSQL via Prisma",
+    "Optimize performance and scalability",
+    "Write tests using Jest"
+  ],
+  "requirements": [
+    "Strong knowledge of TypeScript and Node.js",
+    "Experience with databases, API design, and performance optimization",
+    "Git, code review, basic teamwork skills"
+  ],
+  "conditions": [
+    "Flexible schedule, remote",
+    "Market-level payment",
+    "Friendly team without micromanagement"
+  ]
+},
+    "pm-flowstack": {
+      "title": "Project Manager",
+      "location": "Vladivostok",
+      "salary": "Project-based",
+      "short": "Kanban, clients, releases",
+      "responsibilities": [
+        "Sprint planning",
+        "Client communication",
+        "Risk management"
+      ],
+      "requirements": [
+        "1+ year experience",
+        "Jira/Linear",
+        "Basic understanding of web development"
+      ],
+      "conditions": [
+        "Hybrid schedule",
+        "Transparent KPIs",
+        "Mentored training"
+      ]
+    },
+    "smm-flowstack": {
+      "title": "SMM Specialist",
+      "location": "Vladivostok",
+      "salary": "Negotiable",
+      "short": "Creativity, content creation",
+      "responsibilities": [
+        "Develop a content plan",
+        "Manage social media",
+        "Shoot reels"
+      ],
+      "requirements": [
+        "1+ year experience",
+        "Good smartphone camera",
+        "Understanding of trends"
+      ],
+      "conditions": [
+        "Hybrid schedule",
+        "Skill growth",
+        "Mentored training"
+      ]
+    }
+  },
+  "FOOTER": {
+    "description": "Digital solutions development",
+    "navigation": {
+      "home": "Home",
+      "services": "Services",
+      "portfolio": "Portfolio",
+      "contacts": "Contacts"
+    },
+    "information": {
+      "telegram": "@flowstack_support",
+      "email": "support@flowstack.ru",
+      "adress": "Primorsky Krai, Vladivostok, st. Uborevicha 11"
+    },
+    "copyright": "©2025 All rights reserved"
+  }
+}
