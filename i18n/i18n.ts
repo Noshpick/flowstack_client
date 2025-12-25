@@ -8,20 +8,14 @@ import ru from "./translations/ru_translation.json";
 
 const resources = { en: { translation: en }, ru: { translation: ru } } as const
 
-const serverHtmlLang =
-  typeof window !== 'undefined'
-    ? (document.documentElement.getAttribute('lang') || 'ru').split('-')[0]
-    : undefined
-
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
-    lng: serverHtmlLang,
     fallbackLng: 'ru',
     detection: {
-      order: ['cookie'],
+      order: ['cookie', 'navigator'],
       caches: ['cookie'],
       lookupCookie: 'i18next',
     },
