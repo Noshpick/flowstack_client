@@ -4,8 +4,6 @@ import Footer from "./components/layout/Footer";
 import "../../i18n/i18n";
 import "./globals.css";
 import Script from "next/script";
-import { cookies } from 'next/headers';
-
 const SITE_URL = "https://flowstack.ru/";
 const OG_IMAGE = "https://flowstack.ru/FlowStack.jpg";
 
@@ -223,14 +221,9 @@ const faqSeoJsonLd = {
 };
 
 
-const norm = (l?: string) => (l?.toLowerCase().startsWith('en') ? 'en' : 'ru')
-
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const cookieStore = await cookies()
-  const lng = norm(cookieStore.get('i18next')?.value) || 'ru'
-
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang={lng} className="dark">
+    <html lang="ru" className="dark" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/png" href="/favicon.png" sizes="192x192" />
