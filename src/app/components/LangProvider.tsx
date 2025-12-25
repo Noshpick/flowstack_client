@@ -10,12 +10,17 @@ export default function LangProvider() {
       .find(row => row.startsWith('i18next='))
       ?.split('=')[1]
 
+    console.log('[LangProvider] Saved lang from cookie:', savedLang)
+    console.log('[LangProvider] Current i18n.language:', i18n.language)
+
     if (savedLang && savedLang !== i18n.language) {
+      console.log('[LangProvider] Changing language to:', savedLang)
       i18n.changeLanguage(savedLang)
     }
 
     const updateLang = () => {
       if (typeof document !== 'undefined') {
+        console.log('[LangProvider] Updating document.lang to:', i18n.language)
         document.documentElement.lang = i18n.language
       }
     }
