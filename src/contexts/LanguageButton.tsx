@@ -2,13 +2,11 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import Cookies from 'js-cookie'
-import { useRouter } from 'next/navigation'
 
 const norm = (l?: string) => (l?.toLowerCase().startsWith('en') ? 'en' : 'ru')
 
 export default function LanguageButton() {
   const { i18n } = useTranslation()
-  const router = useRouter()
 
   const initial =
     (typeof window !== 'undefined' && norm(document.documentElement.lang)) ||
@@ -30,7 +28,6 @@ export default function LanguageButton() {
     await i18n.changeLanguage(next)
     Cookies.set('i18next', next, { path: '/', expires: 365 })
     console.log('[LanguageButton] Cookie set, all cookies:', document.cookie)
-    router.refresh()
   }
 
   return (
