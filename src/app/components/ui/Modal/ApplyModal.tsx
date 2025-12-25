@@ -150,7 +150,7 @@ export default function ApplyModal({
   vacancySlug,
   vacancyTitle,
   onClose,
-  apiBase = process.env.NEXT_PUBLIC_API_BASE || ''
+  apiBase = process.env.NEXT_PUBLIC_API_URL || ''
 }: ApplyModalProps) {
   const [open, setOpen] = useState(true)
   const [loading, setLoading] = useState(false)
@@ -193,7 +193,7 @@ export default function ApplyModal({
     e.preventDefault()
     setError(null)
     if (!apiBase) {
-      setError('NEXT_PUBLIC_API_BASE не задан')
+      setError('NEXT_PUBLIC_API_URL не задан')
       return
     }
     if (!valid) return
