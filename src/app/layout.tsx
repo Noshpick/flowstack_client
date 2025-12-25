@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
+import LangProvider from "./components/LangProvider";
 import "../../i18n/i18n";
 import "./globals.css";
 import Script from "next/script";
@@ -265,6 +266,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
 
       <body className="bg-neutral-100 dark:bg-black">
+        <LangProvider />
         <Script
           id="yandex-metrika"
           strategy="afterInteractive"
