@@ -13,6 +13,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
+    lng: 'ru',
     fallbackLng: 'ru',
     detection: {
       order: ['cookie', 'navigator'],
@@ -22,7 +23,6 @@ i18n
     load: 'currentOnly',
     lowerCaseLng: true,
     interpolation: { escapeValue: false },
-    initImmediate: false,
   })
 
 export default i18n;
