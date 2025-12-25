@@ -1,11 +1,9 @@
 'use client'
 
 import { useEffect } from 'react'
-import { useTranslation } from 'react-i18next'
+import i18n from '../../../i18n/i18n'
 
 export default function LangSync() {
-  const { i18n } = useTranslation()
-
   useEffect(() => {
     const updateLang = () => {
       if (typeof document !== 'undefined') {
@@ -19,7 +17,7 @@ export default function LangSync() {
     return () => {
       i18n.off('languageChanged', updateLang)
     }
-  }, [i18n])
+  }, [])
 
   return null
 }
