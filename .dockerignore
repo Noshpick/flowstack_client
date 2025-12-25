@@ -1,0 +1,49 @@
+# Git
+.git
+.gitignore
+
+# Dependencies
+node_modules
+
+# Next.js
+.next
+out
+
+# Environment
+.env
+.env.local
+.env*.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# CI/CD
+.gitlab-ci.yml
+.github
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Testing
+coverage
+.nyc_output
+
+# Misc
+*.md
+README.md
+Caddyfile
+ecosystem.config.cjs
