@@ -14,9 +14,13 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-# Переменные окружения для сборки (будут переопределены в Dokploy)
-ENV NEXT_PUBLIC_API_URL=https://api.flowstack.ru
-ENV NEXT_PUBLIC_SHARED_SECRET=placeholder
+# Переменные окружения для сборки
+ARG NEXT_PUBLIC_API_URL
+ARG NEXT_PUBLIC_SHARED_SECRET
+
+ENV NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
+ENV NEXT_PUBLIC_SHARED_SECRET=${NEXT_PUBLIC_SHARED_SECRET}
+ENV NODE_ENV=production
 
 # Собираем Next.js приложение
 RUN bun run build
@@ -28,24 +32,18 @@ WORKDIR /app
 ENV NODE_ENV=production
 ENV PORT=3000
 
-# Создаем пользователя для безопасности
-RUN addgroup --system --gid 1001 nodejs && \
-    adduser --system --uid 1001 nextjs
-
 # Копируем необходимые файлы
+COPY --from=builder /app/package.json ./package.json
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
-COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
-COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
-
-# Переключаемся на непривилегированного пользователя
-USER nextjs
 
 # Открываем порт
 EXPOSE 3000
 
 # Healthcheck
-HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \
+HEALTHCHECK --interval=30s --timeout=3s --start-period=15s --retries=3 \
   CMD wget --no-verbose --tries=1 --spider http://localhost:3000/ || exit 1
 
-# Запускаем приложение
-CMD ["node", "server.js"]
+# Запускаем приложение через bun
+CMD ["bun", "run", "start"]
